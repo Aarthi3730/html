@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+</head>
+<body>
+
+    <h2>Application Form</h2>
+
+    <form>
+        <label>First Name:</label>
+        <input type="text" name="first_name">
+        <label>Last Name:</label>
+        <input type="text" name="last_name"><br>
+
+        <label>Date of Birth:</label>
+        <input type="date" name="dob">
+        <label>Age:</label>
+        <input type="number" name="age" min="0"><br>
+
+        <label>Gender:</label>
+        <input type="radio" name="gender" value="male"> Male
+        <input type="radio" name="gender" value="female"> Female<br>
+
+        <label>Email Address:</label>
+        <input type="email" name="email"><br>
+
+        <label>Positions Available:</label>
+        <input type="radio" name="position" value="junior"> Junior Developer
+        <input type="radio" name="position" value="mid"> Mid-level Developer
+        <input type="radio" name="position" value="senior"> Senior Developer<br>
+
+        <label>Programming Languages:</label>
+        <input type="checkbox" name="lang" value="java"> Java
+        <input type="checkbox" name="lang" value="js"> JavaScript
+        <input type="checkbox" name="lang" value="python"> Python<br>
+
+        <label>Password:</label>
+        <input type="password" name="password">
+        <label>Confirm Password:</label>
+        <input type="password" name="confirm_password"><br>
+
+        <div class="buttons">
+            <input type="submit" value="Submit">
+            <input type="reset" value="Reset">
+        </div>
+    </form>
+
+</body>
+</html>
