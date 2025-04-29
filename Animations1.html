@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CSS Animation Example</title>
+  <style>
+    div {
+      width: 100px;
+      height: 100px;
+      background-color: blue;
+      position: relative; /* Needed for 'top' to animate */
+      animation-name: example;
+      animation-delay: 2s;
+      animation-duration: 2s; /* Required for the animation to work */
+      animation-timing-function: ease;
+      animation-iteration-count: 1;
+      animation-direction: normal; /* Changed from reverse for clarity */
+      animation-fill-mode: forwards;
+    }
+
+    @keyframes example {
+      from {
+        top: 0px;
+        background-color: red;
+      }
+      to {
+        top: 200px;
+        background-color: blue;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div>hello</div>
+</body>
+</html>
